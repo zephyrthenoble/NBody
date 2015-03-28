@@ -1,0 +1,6 @@
+#!/bin/bash
+# mpicc -o $1 $1.c -lm -L/usr/lib -lGLU  -lGL -lglut  -L/usr/X11R6/lib -lX11 -lXext -lXi -lXmu
+# gcc -o $1 $1.c -lm -L/usr/lib -lGLU  -lGL -lglut  -L/usr/X11R6/lib -lX11 -lXext -lXi -lXmu
+gcc -fopenmp -o $1 $1.c -lm -lGLU  -lGL -lglut  -lX11 -lXext -lXi 
+# gcc-4.3.3 -fopenmp -o $1 $1.c -lm -L/usr/lib -lGLU  -lGL -lglut  -L/usr/X11R6/lib -lX11 -lXext -lXi -lXmu
+# gcc-4.3.2 -fopenmp -o $1 $1.c -lm -L/usr/lib -lGLU  -lGL -lglut  -L/usr/X11R6/lib -lX11 -lXext -lXi -lXmu
